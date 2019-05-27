@@ -27,3 +27,4 @@ def run_game():
         # 每次循环时都重绘屏幕
         gf.update_screen(ai_settings, screen, ship, bullets)
 run_game()
+
