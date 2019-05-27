@@ -24,6 +24,11 @@ def run_game():
         # 更新飞船位置
         ship.update()
         bullets.update()
+
+        # 删除已消失的子弹
+        gf.update_bullets(bullets)
+
         # 每次循环时都重绘屏幕
         gf.update_screen(ai_settings, screen, ship, bullets)
 run_game()
+
